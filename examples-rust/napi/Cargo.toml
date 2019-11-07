@@ -1,0 +1,9 @@
+[package]
+name = "napi"
+version = "1.0.0"
+authors = ["Alexey Orlenko <eaglexrlnk@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+napi-sys = { version = "1.0.0", path = "../napi-sys" }
+napi-codegen = { version = "1.0.0", path = "../napi-codegen" }

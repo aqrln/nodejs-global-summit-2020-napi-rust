@@ -1,0 +1,13 @@
+[package]
+name = "napi-codegen"
+version = "1.0.0"
+authors = ["Alexey Orlenko <eaglexrlnk@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+proc-macro2 = "1.0.6"
+quote = "1.0.2"
+syn = { version = "1.0.7", features = ["full"] }
+
+[lib]
+proc-macro = true
