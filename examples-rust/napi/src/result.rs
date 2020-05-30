@@ -84,7 +84,7 @@ impl StdError for Error {
 
 impl Display for Error {
     fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
-        write!(formatter, "{}", self.description())
+        write!(formatter, "{}", self)
             .and_then(|result| {
                 if let Some(ref message) = self.message {
                     write!(formatter, " ({})", message)

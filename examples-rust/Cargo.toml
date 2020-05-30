@@ -5,4 +5,5 @@ members = [
   "napi-codegen",
   "example1",
   "example2",
+  "example3-wasm"
 ]

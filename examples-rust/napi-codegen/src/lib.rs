@@ -152,7 +152,7 @@ fn return_error() -> proc_macro2::TokenStream {
         } else {
             let message = format!("{}", &error);
             let c_string = std::ffi::CString::new(message)
-                .unwrap_or_else(|_| std::ffi::CString::new(error.description()).unwrap());
+                .unwrap_or_else(|_| std::ffi::CString::new(error.to_string()).unwrap());
 
             unsafe {
                 napi::sys::napi_throw_error(env, std::ptr::null(), c_string.as_ptr());

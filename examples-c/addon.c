@@ -1,6 +1,6 @@
 #include <node_api.h>
 
-// From https://nodejs.org/dist/latest-v13.x/docs/api/n-api.html
+// From https://nodejs.org/dist/latest-v14.x/docs/api/n-api.html
 #define NAPI_CALL(env, call)                                      \
   do {                                                            \
     napi_status status = (call);                                  \
