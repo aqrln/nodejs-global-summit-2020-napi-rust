@@ -28,7 +28,7 @@ napi_value add_numbers(napi_env env, napi_callback_info info) {
   NAPI_CALL(env, napi_get_value_int32(env, argv[0], &a));
 
   int b;
-  NAPI_CALL(env, napi_get_value_int32(env, argv[0], &b));
+  NAPI_CALL(env, napi_get_value_int32(env, argv[1], &b));
 
   napi_value result;
   NAPI_CALL(env, napi_create_int32(env, a + b, &result));
